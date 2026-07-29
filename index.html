@@ -79,7 +79,7 @@
             box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
         }
 
-        /* --- Shogun Trading Cards --- */
+        /* --- Bootstrap Custom Overrides for Shogun Trading Cards --- */
         .shogun-card {
             background: linear-gradient(145deg, #181112 0%, #0d0809 100%);
             border: 2px solid #7f1d1d !important;
@@ -184,7 +184,7 @@
     </header>
 
     <main class="container my-5">
-        <h2 class="section-title">Assembly Members</h2>
+        <h2 class="section-title">Members</h2>
         
         <!-- Responsive Bootstrap Grid -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="profileGrid"></div>
@@ -200,11 +200,11 @@
                 <div class="modal-body p-0">
                     <div class="avatar mx-auto mb-3" id="mAvatar"></div>
                     <h2 class="h3 text-white mb-1" id="mName"></h2>
-                    <div class="mb-3 fw-bold" id="mRole" style="color: #fca5a5 !important;"></div>
-                    <div class="mb-3 text-start small text-light" id="mBio" style="line-height: 1.6;"></div>
+                    <div class="text-danger-emphasis mb-3 fw-bold" id="mRole" style="color: #fca5a5 !important;"></div>
+                    <div class="mb-3 text-start small text-light" id="mBio"></div>
                     <ul class="info-list text-start ps-0">
                         <li><strong>Role / Title:</strong> <span id="mDetailRole"></span></li>
-                        <li><strong>Affiliation:</strong> Lodger's Assembly - Shibuya Chapter</li>
+                        <li><strong>Affiliation:</strong> 575 Chapter</li>
                         <li><strong>Status:</strong> Active Member</li>
                     </ul>
                 </div>
@@ -213,69 +213,22 @@
     </div>
 
     <footer>
-        &copy; 2026 Lodger's Assembly. All rights reserved.
+        &copy; 2026 Shoturday's Assembly. All rights reserved.
     </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const members = [
-            { 
-                id: 1, 
-                name: "Lester Mark", 
-                initials: "LMX", 
-                role: "Data Scientist", 
-                bio: "Master of computational intellect and data architecture. Lester analyzes complex patterns to formulate precise strategies for the assembly." 
-            },
-            { 
-                id: 2, 
-                name: "Lance Marion", 
-                initials: "LMZ", 
-                role: "Paralegal/Realtor", 
-                bio: "Guardian of contracts and domain acquisitions. Lance navigates complex legal realms and secures valuable territories for the assembly's domain." 
-            },
-            { 
-                id: 3, 
-                name: "Paul Michael", 
-                initials: "PT", 
-                role: "PSW", 
-                bio: "The compassionate defender. Dedicated to health, support, and protection, Paul ensures the vitality and resilience of all assembly allies." 
-            },
-            { 
-                id: 4, 
-                name: "Anthony", 
-                initials: "A", 
-                role: "AZ Driver", 
-                bio: "Vanguard of logistics and heavy transport. Anthony commands the highways, delivering vital resources across distant frontiers without delay." 
-            },
-            { 
-                id: 5, 
-                name: "John Chadwick", 
-                initials: "JC", 
-                role: "CEO", 
-                bio: "Supreme strategist and assembly commander. John steers the brotherhood's vision, steering long-term ambitions into decisive victories." 
-            },
-            { 
-                id: 6, 
-                name: "Sandrover", 
-                initials: "S", 
-                role: "Calligraphist", 
-                bio: "Artisan of sacred scripts and refined aesthetics. Sandrover preserves the assembly’s legacy and culture through meticulous brushwork and design." 
-            },
-            { 
-                id: 7, 
-                name: "Emerson", 
-                initials: "E", 
-                role: "Operation Manager", 
-                bio: "Architect of tactical execution. Emerson coordinates day-to-day maneuvers, optimizing efficiency across every sector of the assembly." 
-            },
-            { 
-                id: 8, 
-                name: "Paul", 
-                initials: "P", 
-                role: "Police", 
-                bio: "Enforcer of discipline and order. Paul stands watch over the assembly's perimeter, upholding justice and safeguarding the brotherhood." 
-            }
+            { id: 1, name: "Lester Mark", initials: "LMX", role: "Data Scientist", bio: "" },
+            { id: 2, name: "Lance Marion", initials: "LMZ", role: "Paralegal/Realtor", bio: "" },
+            { id: 3, name: "Paul Michael", initials: "PT", role: "PSW", bio: "" },
+            { id: 4, name: "Anthony", initials: "A", role: "AZ Driver", bio: "." },
+            { id: 5, name: "John Chadwick", initials: "JC", role: "CEO", bio: "" },
+            { id: 6, name: "Sandrover", initials: "S", role: "Calligraphist", bio: "" },
+            { id: 7, name: "Emerson", initials: "E", role: "Operation Manager", bio: "" },
+            { id: 8, name: "Paul", initials: "P", role: "Police", bio: "" },
+            { id: 9, name: "Frankwency", initials: "F", role: "Senior Officer", bio: "J" }
         ];
 
         const grid = document.getElementById('profileGrid');
